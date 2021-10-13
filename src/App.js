@@ -30,7 +30,7 @@ function App() {
         "https://coded-task-axios-be.herokuapp.com/rooms",
         newRoom
       );
-      console.log("triggered");
+
       setRooms([...rooms, response.data]);
     } catch (error) {
       console.log(error);
@@ -49,6 +49,7 @@ function App() {
       console.log(error);
     }
   };
+  // to do : call BE to delete a room
 
   const updateRoom = async (roomId, data) => {
     try {
